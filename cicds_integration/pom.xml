@@ -23,7 +23,7 @@
 			<plugin>
 				<groupId>org.mule.tools.maven</groupId>
 				<artifactId>mule-maven-plugin</artifactId>
-				<version>${mule.maven.plugin.version}</version>
+				<version>2.1.1</version>
 				 
 				<extensions>true</extensions>
 				
@@ -31,7 +31,7 @@
 			<plugin>
         <groupId>org.mule.tools.maven</groupId>
         <artifactId>mule-maven-plugin1</artifactId>
-        <version>${mule.maven.plugin.version}</version>
+        <version>2.1.1</version>
 		
         <configuration>
         <cloudHubDeployment>
@@ -41,7 +41,7 @@
           <password>Mouli143@</password> 
           <applicationName>app-sample</applicationName>
            <businessGroup>kelltontech</businessGroup>
-          <region>us-east-1</region>
+       
           <environment>Sandbox</environment> 
           <uri>https://anypoint.mulesoft.com</uri> 
           <workerType>Micro</workerType>
