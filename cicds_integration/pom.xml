@@ -35,7 +35,7 @@
         <version>2.2.1</version>
 		
         <configuration>
-          <deploymentType>cloudhub</deploymentType>
+          <deploymentType>app-sample</deploymentType>
           <muleVersion>4.2.2</muleVersion> 
           <username>mouli9</username> 
           <password>Mouli143@</password> 
