@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="3cb15d8c-2b8d-45e7-9830-0bf5704c8e72" >
+		<http:listener-connection host="0.0.0.0" port="8081" />
+	</http:listener-config>
+	<flow name="cicds_integrationFlow" doc:id="d15b7bd4-4d79-4659-9c5b-5ac21ad10665" >
+		<http:listener doc:name="Listener" doc:id="976a04bb-3bbc-4808-8827-3ab13f836e8a" config-ref="HTTP_Listener_config" path="/cicids"/>
+		<set-payload value='#["this is first app"]' doc:name="Set Payload" doc:id="530ef419-7939-4802-b687-5c406a0978c8" />
+	</flow>
+</mule>
