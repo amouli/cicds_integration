@@ -42,7 +42,6 @@
           <password>Mouli143@</password> 
           <applicationName>app-sample</applicationName>
           <environment>Sandbox</environment> 
-         
           <uri>https://anypoint.mulesoft.com</uri> 
           <workerType>Micro</workerType>
           <workers>1</workers>
